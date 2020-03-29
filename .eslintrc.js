@@ -25,7 +25,6 @@ module.exports = {
     "rules": {
         // enable additional rules
       
-        
  
 
         // override default options for rules from base configurations
@@ -33,6 +32,6 @@ module.exports = {
        
 
         // disable rules from base configurations
-        "no-console": "off",
+        "no-console": "off"
     }
 };

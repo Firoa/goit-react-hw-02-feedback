@@ -8,9 +8,17 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       <li>neutral: {neutral} </li>
       <li>bad: {bad}</li>
       <li>total: {total}</li>
-      <li> positivePercentage: {positivePercentage}</li>
+      <li> positivePercentage: {positivePercentage}%</li>
     </ul>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
